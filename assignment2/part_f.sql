@@ -1,0 +1,1 @@
+SELECT count(*) FROM frequency WHERE term = "transactions" or term = "world";
