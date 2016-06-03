@@ -1,1 +1,1 @@
-SELECT count(*) FROM frequency WHERE term = "transactions" or term = "world";
+select count(*) from(select * from frequency where term == "world" and docid in (SELECT docid FROM frequency WHERE term == "transactions") );

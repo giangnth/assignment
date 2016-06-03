@@ -1,1 +1,1 @@
-SELECT count(*) FROM frequency WHERE term = "parliament";
+select count(*) from(SELECT distinct docid FROM frequency WHERE term == "law" or term == "legal");

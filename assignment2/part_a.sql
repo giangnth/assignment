@@ -1,1 +1,1 @@
-SELECT * FROM frequency WHERE docid = "10398_txt_earn";
+SELECT count(*) FROM frequency WHERE docid = "10398_txt_earn";
